@@ -2,8 +2,8 @@
   "description": "sass-compilation recipe",
   "devDependencies": {
     "gulp": "^3.8.7",
+    "gulp-sass": "^0.7.3",
     "gulp-util": "^3.0.0",
     "run-sequence": "^0.3.6"
   }
 }
-
