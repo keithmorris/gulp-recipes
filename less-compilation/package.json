@@ -1,0 +1,9 @@
+{
+  "description": "less-compilation recipe",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-less": "^1.3.5",
+    "gulp-util": "^3.0.0",
+    "run-sequence": "^0.3.6"
+  }
+}
