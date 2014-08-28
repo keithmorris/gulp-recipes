@@ -1,6 +1,7 @@
 "use strict";
 
-var fs = require('fs'),
+var exec = require('child_process').exec,
+	fs = require('fs'),
 	gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	multiline = require('multiline.js'),
@@ -86,7 +87,12 @@ gulp.task('recipe', function (callback) {
 	fs.writeFileSync('gulpfile.js', multiline(files.gulpfile_js, replace));
 	fs.writeFileSync('README.md', multiline(files.readme_md, replace));
 
+	var cp = exec('npm install', function(err){
+		callback(err);
+	});
 
+	cp.stdout.pipe(process.stdout);
+	cp.stderr.pipe(process.stderr);
 });
 
 gulp.task('default', function (callback) {
