@@ -6,8 +6,14 @@ var exec = require('child_process').exec,
 	gutil = require('gulp-util'),
 	multiline = require('multiline.js'),
 	run = require('run-sequence'),
-	slugify = require('slug'),
-	yargs = require('yargs');
+	slugify = require('slug');
+
+
+var yargs = require('yargs')
+		.usage("Create a new gulp.js recipe from a standard template.\n\n" +
+			'\tUsages:\n' +
+			'\t\t$0 recipe --name="run nunit tests"\n' +
+			'\t\t$0 recipe -n "run nunit tests"');
 
 var files = {
 	gitignore   : function () {
@@ -60,10 +66,7 @@ The links below are for additional documentation on the [npm](https://www.npmjs.
 };
 
 gulp.task('recipe', function (callback) {
-	var args = yargs.usage("Create a new gulp.js recipe from a standard template.\n\n" +
-	'\tUsages:\n' +
-	'\t\t$0 recipe --name="run nunit tests"\n' +
-	'\t\t$0 recipe -n "run nunit tests"')
+	var args = yargs
 		.demand('name')
 		.alias('name', 'n')
 		.describe('name', "The name of the recipe. It will be 'slugified' so that 'My great recipe!' will turn into 'my-great-recipe'")
@@ -96,7 +99,7 @@ gulp.task('recipe', function (callback) {
 });
 
 gulp.task('default', function (callback) {
-	gutil.log(gutil.colors.blue('Default Task.'));
+	console.log(gutil.colors.yellow(yargs.help()));
 	callback();
 });
 

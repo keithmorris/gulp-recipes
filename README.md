@@ -10,6 +10,8 @@ If all your are looking for is some gulp recipes, please explore the different s
 
 The `gulp-recipes` repository is set up as a gulp project itself. After you clone the repository, in the root directory you need to run the `npm install` command to install the dependencies and prepare to create your own recipe.
 
+For some quick info on usage, just run the `gulp` command with no arguments (the `default` task).
+
 To create your own recipe, create a new `git` branch and then execute the following command to create a new boilerplate recipe:
 
 ```
