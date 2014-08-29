@@ -1,0 +1,8 @@
+{
+  "name": "windows-robocopy-deployment",
+  "description": "Windows Robocopy Deployment recipe",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-util": "^3.0.0"
+  }
+}
