@@ -53,6 +53,12 @@ gulp.task('default', function (callback) {
 
 ## Examples
 
+### example task
+
+`gulp example`
+
+This is a description of the `example` task.
+
 ## Modules & Packages
 
 The links below are for additional documentation on the [npm](https://www.npmjs.org/) packages used in this recipe.
