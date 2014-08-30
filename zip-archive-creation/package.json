@@ -1,0 +1,9 @@
+{
+  "name": "zip-archive-creation",
+  "description": "zip archive creation recipe",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-util": "^3.0.0",
+    "gulp-zip": "^2.0.1"
+  }
+}
