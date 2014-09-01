@@ -13,7 +13,7 @@ var solutionFile = "ExampleMVCApp.sln",
 /*
 	Detailed information on properties available for MSBuild can be found in the following links:
 		http://msdn.microsoft.com/en-us/library/ms164311.aspx (Command line reference)
-		http://msdn.microsoft.com/en-us/library/dd393574.aspx (MSBUild reference guide)
+		http://msdn.microsoft.com/en-us/library/dd393574.aspx (MSBuild reference guide)
 */
 gulp.task('msbuild', function () {
 	return gulp.src(solutionFile)
