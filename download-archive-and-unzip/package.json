@@ -1,0 +1,12 @@
+{
+  "name": "download-archive-and-unzip",
+  "description": "Download Archive and Unzip recipe",
+  "devDependencies": {
+    "adm-zip": "^0.4.4",
+    "fs.extra": "^1.2.1",
+    "gulp": "^3.8.7",
+    "gulp-download": "0.0.1",
+    "gulp-util": "^3.0.0",
+    "uuid": "^1.4.1"
+  }
+}
